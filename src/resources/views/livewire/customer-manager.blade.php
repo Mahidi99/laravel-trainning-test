@@ -1,5 +1,5 @@
 <div style="background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);">
-    
+
     <div class="flex justify-between items-center p-4">
         <button
             wire:click="$set('showModal', true)"
@@ -100,6 +100,16 @@
                     <p class="text-gray-700 mb-1"><strong>NIC:</strong> {{ $customer->nic }}</p>
                     <p class="text-gray-700 mb-1"><strong>Email:</strong> {{ $customer->email }}</p>
                     <p class="text-gray-700 mb-1"><strong>Phone:</strong> {{ $customer->phone }}</p>
+
+                    {{-- <button
+                        wire:click="$set('showCarModal', true)"
+                        class="py-2 px-4 rounded"
+                        style="background-color: black; color:white; margin-bottom: 10px; margin-top: 10px;"
+                    >
+                        Add Car
+                    </button> --}}
+
+                    <livewire:car-manager :customerName="$customer->name" />
                 </div>
             @endforeach
         </div>

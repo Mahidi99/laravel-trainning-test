@@ -29,10 +29,10 @@ class CustomerManager extends Component
     public function addCustomer()
     {
         $this->validate([
-            'nic' => 'required|string|max:255',
+            'nic' => 'required|string|max:10',
             'name' => 'required|string|max:255',
             'email' => 'required|email|max:255|unique:customer_info,email',
-            'phone' => 'required|string|max:20',
+            'phone' => 'required|string|max:10',
         ]);
 
         CustomerInfo::create([
