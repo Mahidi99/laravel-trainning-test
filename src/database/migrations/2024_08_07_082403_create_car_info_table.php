@@ -17,7 +17,7 @@ return new class extends Migration
         $table->string('model');
         $table->string('fuel_type');
         $table->string('transmission');
-        $table->foreignId('customer_id')->constrained('customer_info')->onDelete('cascade');
+        // $table->string('customer_name');
         $table->timestamps();
     });
 }

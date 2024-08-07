@@ -9,8 +9,7 @@ class CarController extends Controller
 {
     public function show()
     {
-        $cars = CarInfo::with('customer')->get();
-
+        $cars = CarInfo::all();
         return view('car-details', compact('cars'));
     }
 }

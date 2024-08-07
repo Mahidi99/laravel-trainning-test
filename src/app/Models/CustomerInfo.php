@@ -17,9 +17,4 @@ class CustomerInfo extends Model
         'email',
         'phone',
     ];
-
-    public function cars()
-    {
-        return $this->hasMany(CarInfo::class, 'customer_id');
-    }
 }

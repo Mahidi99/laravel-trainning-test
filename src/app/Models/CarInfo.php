@@ -18,10 +18,5 @@ class CarInfo extends Model
         'transmission',
         'customer_name',
     ];
-
-    public function customer()
-    {
-        return $this->belongsTo(CustomerInfo::class, 'customer_id');
-    }
 }
 

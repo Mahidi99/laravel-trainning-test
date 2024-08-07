@@ -37,7 +37,6 @@ class CarManager extends Component
             'model' => $this->model,
             'fuel_type' => $this->fuelType,
             'transmission' => $this->transmission,
-            'customer_name' => $this->selectedCustomer,
         ]);
 
         $this->reset();
