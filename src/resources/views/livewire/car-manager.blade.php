@@ -2,7 +2,7 @@
     <!-- Add Car Button -->
     <button
         wire:click="openCarModal('{{ $customerName }}')"
-        class="bg-blue-500 text-white py-2 px-4 rounded"
+        class=" text-white py-2 px-4 rounded"
         style="background-color: black; color:white; margin-top: 10px; margin-bottom: 10px; margin-left: 10px;"
     >
         Add Car
